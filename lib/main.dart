@@ -12,21 +12,26 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "shopping app",
-      home: const HomePage(),
+      home: HomePage(),
       theme: ThemeData(
         fontFamily: 'Lato',
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromRGBO(254, 206, 1, 1),
           primary: const Color.fromRGBO(254, 206, 1, 1),
         ),
+        appBarTheme: AppBarTheme(
+          titleTextStyle: TextStyle(fontSize: 20, color: Colors.black),
+        ),
         inputDecorationTheme: const InputDecorationTheme(
           prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
           hintStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
         textTheme: TextTheme(
+          titleLarge: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
           titleMedium: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
           bodySmall: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
         ),
+        useMaterial3: true,
       ),
     );
   }
