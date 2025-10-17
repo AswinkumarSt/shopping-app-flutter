@@ -32,13 +32,3 @@ final products = [
     'imageUrl': 'assets/images/shoes_4.png',
   },
 ];
-final cart = [
-  {
-    'id': '3',
-    'company': 'Jordans',
-    'title': ' Men\'s Jordans Shoes',
-    'price': 84.52,
-    'sizes': [8, 9, 10, 11],
-    'imageUrl': 'assets/images/shoes_4.png',
-  },
-];
